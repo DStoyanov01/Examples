@@ -1,0 +1,28 @@
+/*footer
+{
+    nav
+    {
+        background:  #78C1AD;
+    }
+} */
+main article h1 {
+  font-size: 250%;
+}
+
+main article img {
+  width: 18%;
+}
+
+main article p {
+  font-size: 90%;
+}
+
+main section article #row {
+  font-size: 13px;
+  width: 80%;
+}
+
+main #bgr {
+  background: url("../images/background.jpg");
+}
+/*# sourceMappingURL=indexStyle.css.map */
