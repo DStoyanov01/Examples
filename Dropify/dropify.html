@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="sweetalert.css">
+    <link rel="stylesheet" href="dropify.css">
+    <!--??????--><link rel="stylesheet" href="../../../Bootstrap Plugins/07. JavaScript-for-Front-End-Bootstrap-Plugins-Lab-Resources/02. Social-Buttons/bootstrap-social-gh-pages/bootstrap-social.css">
+</head>
+<body class="w-100 h-100" style="background: url('hands-with-pencil-and-ruler.jpg'); background-size: cover; width: 100%; background-repeat: no-repeat;">
+    <div class="container-fluid bg-info pb-5 w-50 mt-5">
+        <h2 class="text-white text-center w-100 pt-4">Job Application</h2>
+        <h5 class="text-white text-center pb-4">We are looking for someone like you</h5>
+        <div id="accordion">     <!-- ACCORDION  -->
+                <div class="card">  <!-- Accordion CARD-->
+                    <button id="headingOne" class="btn btn-info" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Upload your data
+                    </button>                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <form id="clearForm"> <!-- FORM-->
+                                <div class="form-group"> <!-- first name input -->
+                                    <label for="firstNameInput">First Name</label>
+                                    <input type="text" class="form-control" id="firstNameInput" placeholder="first name">
+                                </div>
+                                <div class="form-group"> <!-- last name input -->
+                                    <label for="lastNameInput">Last Name</label>
+                                    <input type="text" class="form-control" id="lastNameInput" placeholder="last name">
+                                </div>
+                                <div class="form-group"> <!-- Email input -->
+                                    <label for="inputEmail3">Email</label>
+                                    <div>
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group"> <!-- Social Buttons  -->
+                                    <div class="row w-100 m-0">   
+                                        <!-- Facebook -->
+                                        <a href="#" id="btnFB" class="btn btn-social btn-facebook col-lg-4 col-md-6 col-sm-12">
+                                            <span class="fab fa-facebook"></span>
+                                            <small>Sign in with Facebook</small>
+                                        </a>
+                                        <!-- Google -->
+                                        <a href="#" id="btnGoogle" class="btn btn-social btn-google col-lg-4 col-md-6 col-sm-12">
+                                            <span class="fab fa-google"></span>
+                                            <small class="w-100">Sign in with Google</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                      
+                             </form><!-- /FORM-->
+                        </div>
+                    </div>
+                </div>
+                <div class="card"> <!-- Accordion CARD-->
+                    <button id="headingTwo" class="btn btn-info collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Social Media Profiles
+                    </button>     
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"> <!-- ICONS + inputs-->
+                            <div class="container input-group pt-5 pb-2"> <!-- Twitter icon-->
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-social-icon btn-twitter h-100" type="button"><span class="fab fa-twitter"></span></button>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Twitter profile" aria-label="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="container input-group pb-2"> <!-- Facebook icon-->
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-social-icon btn-facebook h-100" type="button"><span class="fab fa-facebook"></span></button>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Facebook profile" aria-label="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="container input-group pb-2"> <!-- Github icon-->
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-social-icon btn-github h-100" type="button"><span class="fab fa-github"></span></button>
+                                </div>
+                                <input type="text" class="form-control" placeholder="GitHub profile" aria-label="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="container input-group pb-5"> <!-- LinkedIn icon-->
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-social-icon btn-linkedin h-100" type="button"><span class="fab fa-linkedin"></span></button>
+                                </div>
+                                <input type="text" class="form-control" placeholder="LinkedIn profile" aria-label="" aria-describedby="basic-addon1">
+                            </div>
+                    </div>
+                </div>
+                <div class="card"> <!-- Accordion CARD-->
+                        <button id="headingThree" class="btn btn-info collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Upload CV
+                        </button>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                               
+                                <input type="file" id="test" class="dropify" >
+                                         
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="form-row text-center">
+            <div class="col-12">
+                <button type="button" id="testBtn" class="btn btn-info border-white mt-4">SUBMIT</button>     
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="dropify.js"></script>
+    <script src="sweetalert.min.js"></script>
+    <script src="dropifyJS.js"></script>
+</body>
+</html>
