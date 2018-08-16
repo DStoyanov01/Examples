@@ -1,0 +1,45 @@
+body
+{
+	background: #E9E4E8;
+}
+#image
+{
+	width: 100%;
+	height: 300px;
+	background-image: url("img/bg-1.jpg");
+	background-size: cover;
+	background-position: center;
+	
+}
+
+#heading
+{
+	text-align: center;
+	font-size: 300%;
+	padding-top: 7%;
+}
+
+#heading strong
+{
+	font-size: 130%;
+}
+
+#section
+{
+	font-size: 15px;
+	width: 100%;
+}
+
+#pic
+{
+	width: 100%;
+	height: 250px;
+	size: cover;
+	position: center;
+}
+
+footer p
+{
+    margin: auto;
+	text-align: center;
+}
