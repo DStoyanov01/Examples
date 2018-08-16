@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="testExam.css"> -->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="bg-warning text-center">
+                <h1>Company Codex</h1>
+            </header>
+
+            <content>
+        
+                <h1 class="text-center">Register Yourself</h1>
+                <hr class="bg-warning" style="height: 2px">
+
+                <form class="w-100 m-auto">
+                    <div class="form-group row w-50 m-auto pb-5">
+                        <div class="col">
+                            <label for="firstNameInput" class="pr-3">First Name</label>
+                            <input type="text" class="form-control mr-5" id="firstNameInput" placeholder="first name" name="name">
+                        </div>
+                        <div class="col">
+                            <label for="lastNameInput" class="">Lastname</label>
+                            <input type="text" class="form-control col" id="lastNameInput" placeholder="last name" name="surname" />
+                        </div>
+                    </div>
+                    <div class="form-group row w-50 m-auto pt-5">
+                        <div class="col">
+                            <label for="branch">Branch</label>
+                            <input type="text" class="form-control col mr-5" id="branch" placeholder="branch" name="branch">
+                        </div>
+                        <div class="col">
+                            <label for="company">Company</label>
+                            <input type="text" class="form-control col" id="company" placeholder="company" name="company">
+                        </div>
+                    </div>
+                    <hr class="bg-warning my-5 w-75" style="height: 2px">
+                    <div class="form-group m-auto w-50">
+                        <h1 class="text-center">Work Email</h1>
+                        <input type="text" class="form-control text-center" id="result" name="firstname" disabled="disabled" />
+                    </div>    
+                </form>
+
+            </content>
+            
+        </div>
+        <script>
+            var firstName = $("#firstNameInput").on('keyup',toResult)
+            var lastName = $("#lastNameInput").on('keyup', toResult)
+            var branch = $('#branch').on('keyup', toResult)
+            var company = $('#company').on('keyup', toResult)
+         
+            function toResult()
+            {
+
+                $("#result").val(firstName.val().substr(0,1) + '.' + lastName.val() + '@' + branch.val() + '-' + company.val() + '.com')
+            } 
+            
+            
+            
+
+        </script>
+        <script src="../../../Bootstrap/Bootstrap 4.1.3/js/bootstrap.js"></script>
+        <script src="../../../Bootstrap/Bootstrap 4.1.3/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
